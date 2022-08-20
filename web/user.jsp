@@ -1,0 +1,23 @@
+<%-- 
+    Document   : user
+    Created on : Feb 16, 2022, 4:58:54 PM
+    Author     : ACER
+--%>
+
+<%@page import="sample.user.UserDTO"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>User Page</title>
+    </head>
+    <body>
+        <h1>Your information: </h1>
+        
+        User ID: ${sessionScope.LOGIN_USER.userID}</br>
+        Full Name: ${sessionScope.LOGIN_USER.fullName}</br>
+        Role ID: ${sessionScope.LOGIN_USER.roleID}</br>
+        Password: ${"***"}
+    </body>
+</html>
